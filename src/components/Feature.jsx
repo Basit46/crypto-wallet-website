@@ -1,11 +1,11 @@
 import React from "react";
 
-const Feature = ({ feature }) => {
+const Feature = ({ feature, i }) => {
   return (
     <div
-      className={`${
-        feature.spanTwo && "grid-span-two"
-      } relative h-[492.45px] p-[32px] bg-[#FAFAFA] border-[1px] border-[#F3F3F3] rounded-[24px] overflow-hidden`}
+      className={`${feature.spanTwo && "grid-span-one sm:grid-span-two"} ${
+        i == 2 && "grid-span-one sm:grid-span-two xl:grid-span-one"
+      } relative h-fit sm:h-[492.45px] p-[15px] sm:p-[32px] bg-[#FAFAFA] border-[1px] border-[#F3F3F3] rounded-[24px] overflow-hidden`}
     >
       {feature.isNew && (
         <div className="mb-[10px] w-fit bg-[#FFC5F6] py-[6px] px-[12px] rounded-[100px] text-[12px] font-[500]">
@@ -14,14 +14,14 @@ const Feature = ({ feature }) => {
       )}
       <h1
         className={`${
-          feature.spanTwo && "w-[50%]"
-        } text-[28px] font-[500] leading-[31.36px]`}
+          feature.spanTwo && "w-full sm:w-[50%]"
+        } text-[23px] sm:text-[28px] font-[500] leading-[31.36px]`}
       >
         {feature.title}
       </h1>
       {!feature.spanTwo && (
         <img
-          className="h-[212px] my-[20px]"
+          className="mx-auto sm:mx-0 h-[212px] my-[20px]"
           src={feature.img}
           alt="feature illustration"
         />
@@ -35,7 +35,7 @@ const Feature = ({ feature }) => {
       </p>
       {feature.spanTwo && (
         <img
-          className="absolute bottom-[-57px] left-[60px] w-[85%]"
+          className="hidden sm:block absolute bottom-[-57px] left-[60px] w-[85%]"
           src={feature.img}
           alt="feature illustration"
         />

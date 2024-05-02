@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <footer className="w-full mt-[150px] mb-[48px] bg-[#272727] text-white rounded-[24px] pt-[64px] px-[48px]">
-      <div className="links flex justify-between">
+      <div className="links flex flex-wrap gap-y-[30px] justify-between">
         <div>
           <h1>MENU</h1>
           <ul>

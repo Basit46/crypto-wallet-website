@@ -2,7 +2,7 @@ import React from "react";
 
 const SecurityBox = ({ security }) => {
   return (
-    <div className="h-[477px] p-[32px] bg-[#FAFAFA] border-[1px] border-[#F3F3F3] rounded-[24px] overflow-hidden">
+    <div className="h-fit xmd:h-[477px] p-[15px] md:p-[32px] bg-[#FAFAFA] border-[1px] border-[#F3F3F3] rounded-[24px] overflow-hidden">
       <h1 className="text-[28px] font-[500] leading-[31.36px]">
         {security.title}
       </h1>
@@ -10,7 +10,7 @@ const SecurityBox = ({ security }) => {
         {security.body}
       </p>
       <img
-        className="h-[212px] w-fit"
+        className="mx-auto xmd:mx-0 h-[212px] w-fit"
         src={security.img}
         alt="feature illustration"
       />

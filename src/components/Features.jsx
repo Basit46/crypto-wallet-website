@@ -1,46 +1,35 @@
 import React from "react";
 import { featuresList } from "../data/features";
+import CustomBanner from "./CustomBanner";
 import Feature from "./Feature";
 
 const Features = () => {
   return (
-    <section id="features" className="w-full mt-[200px] px-[112px]">
-      <h1 className="text-[52px] font-[500] leading-[58.24px]">
-        Powerful Features for <br /> Managing Your Crypto
+    <section
+      id="features"
+      className="w-full mt-[100px] md:mt-[200px] px-[0px] xl:px-[112px]"
+    >
+      <h1 className="text-[40px] md:text-[52px] font-[500] leading-[1.2] md:leading-[58.24px]">
+        Powerful Features for <br className="hidden md:inline" /> Managing Your
+        Crypto
       </h1>
 
-      <div className="w-full mt-[30px] grid grid-cols-3 gap-[24px]">
+      <div className="w-full mt-[30px] grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-[24px]">
         {featuresList.map((feature, i) => (
-          <Feature key={i} feature={feature} />
+          <Feature key={i} feature={feature} i={i} />
         ))}
       </div>
 
-      <div className="relative mt-[30px] bg-[#FFC5F6] h-[408px] overflow-hidden w-full flex flex-col justify-between rounded-[24px] py-[40px] pl-[40px]">
-        <h1 className="text-[40px] font-[500] leading-[44.8px]">
-          Streamline Your <br /> Crypto Experience
-        </h1>
-        <div>
-          <p className="mb-[30px]">
-            Experience seamless cryptocurrency management <br /> with our
-            user-friendly app. Effortlessly track, trade, <br /> and secure your
-            digital assets, all in one place.
-          </p>
-          <button className="px-[14px] py-[10px] rounded-[10px] bg-black text-white">
-            Supported Chains
-          </button>
-        </div>
-
-        <img
-          className="absolute right-[-100px] top-[50%] translate-y-[-50%]"
-          src="https://framerusercontent.com/images/IK6QfgfmlMk4twRecemfZGPn4.svg"
-          alt="bg"
-        />
-        <img
-          className="absolute right-[75px]"
-          src="https://framerusercontent.com/images/lOXf7O0V57KOYVY785AjrDqfHE.svg"
-          alt="bg"
-        />
-      </div>
+      <CustomBanner
+        bg="#FFC5F6"
+        title1="Streamline Your"
+        title2="Crypto Experience"
+        text="Experience seamless cryptocurrency management <br /> with our
+        user-friendly app. Effortlessly track, trade, <br /> and secure your
+        digital assets, all in one place."
+        button="Supported Chains"
+        img="https://framerusercontent.com/images/lOXf7O0V57KOYVY785AjrDqfHE.svg"
+      />
     </section>
   );
 };

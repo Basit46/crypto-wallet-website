@@ -1,16 +1,18 @@
 import React from "react";
+import CustomBanner from "./CustomBanner";
 
 const Download = () => {
   return (
     <section
       id="download"
-      className="relative mt-[150px] px-[112px] pt-[80px] pb-[120px] min-h-[200px] w-full rounded-[20px] bg-[#FAFAFA] border-[1px] border-[#F3F3F3] overflow-hidden"
+      className="relative mt-[150px] px-[20px] xl:px-[112px] pt-[80px] pb-[120px] min-h-[200px] w-full rounded-[20px] bg-[#FAFAFA] border-[1px] border-[#F3F3F3] overflow-hidden"
     >
-      <h1 className="text-[52px] font-[500] leading-[58.2px]">
-        Get the Trojan App and <br /> Dive Into Crypto
+      <h1 className="text-[40px] md:text-[52px] font-[500] leading-[1.2] md:leading-[58.2px]">
+        Get the Trojan App and <br className="hidden md:inline" /> Dive Into
+        Crypto
       </h1>
-      <div className="mt-[50px] w-full flex justify-between">
-        <div className="w-[30%] h-[219px] p-[32px]  border-[1px] border-[#F3F3F3] bg-white rounded-[24px] flex flex-col justify-between">
+      <div className="mt-[50px] w-full flex flex-col lg:flex-row gap-[30px] lg:gap-0 justify-between">
+        <div className="mx-auto w-full sm:w-[50%] lg:w-[30%] h-[219px] p-[32px]  border-[1px] border-[#F3F3F3] bg-white rounded-[24px] flex flex-col justify-between">
           <img
             className="w-[48px]"
             src="https://framerusercontent.com/images/ShBuiLqeIyWr9tFDtx24p4roGKE.svg"
@@ -21,7 +23,7 @@ const Download = () => {
             Download the Trojan mobile app from the App Store
           </p>
         </div>
-        <div className="w-[30%] h-[219px] p-[32px]  border-[1px] border-[#F3F3F3] bg-white rounded-[24px] flex flex-col justify-between">
+        <div className="mx-auto w-full sm:w-[50%] lg:w-[30%] h-[219px] p-[32px]  border-[1px] border-[#F3F3F3] bg-white rounded-[24px] flex flex-col justify-between">
           <img
             className="w-[48px]"
             src="https://framerusercontent.com/images/FrxZyy6kfKwLeUdY1uobOZ9OEk.svg"
@@ -32,7 +34,7 @@ const Download = () => {
             Download the Trojan mobile app from the Google play
           </p>
         </div>
-        <div className="w-[30%] h-[219px] p-[32px]  border-[1px] border-[#F3F3F3] bg-white rounded-[24px] flex flex-col justify-between">
+        <div className="mx-auto w-full sm:w-[50%] lg:w-[30%] h-[219px] p-[32px]  border-[1px] border-[#F3F3F3] bg-white rounded-[24px] flex flex-col justify-between">
           <img
             className="w-[48px]"
             src="https://framerusercontent.com/images/X007m2fizmS2iG1h23OpgO2GE.svg"
@@ -45,9 +47,22 @@ const Download = () => {
         </div>
       </div>
 
-      <div className="relative mt-[30px] bg-[#77E3AF] h-[408px] overflow-hidden w-full flex flex-col justify-between rounded-[24px] py-[40px] pl-[40px]">
+      <CustomBanner
+        bg="#77E3AF"
+        title1="Take Your Crypto"
+        title2="Assets Anywhere!"
+        text="Unlock the power of crypto on the go with the Trojan <br /> app.
+        Seamlessly manage, trade, and track your digital <br /> assets from
+        the palm of your hand, wherever you are. <br /> Download now and
+        take control of your crypto."
+        button="Download Wallet"
+        isDownload={true}
+        img="https://framerusercontent.com/images/6jMT6Tgpe3S8Ishzeh2ryLD7rw.png"
+      />
+
+      {/* <div className="relative mt-[30px] bg-[] h-[408px] overflow-hidden w-full flex flex-col justify-between rounded-[24px] py-[40px] pl-[40px]">
         <h1 className="text-[40px] font-[500] leading-[44.8px]">
-          Take Your Crypto <br /> Assets Anywhere!
+          Take Your Crypto <br /> 
         </h1>
         <div>
           <p className="mb-[30px]">
@@ -82,7 +97,7 @@ const Download = () => {
           src="https://framerusercontent.com/images/6jMT6Tgpe3S8Ishzeh2ryLD7rw.png"
           alt="bg"
         />
-      </div>
+      </div> */}
 
       <div className="absolute left-0 bottom-0 h-[57px] w-full bg-[#333333] flex items-center">
         <div className="w-full slider flex items-center gap-[18px] pl-[18px]">

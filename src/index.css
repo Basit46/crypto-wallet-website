@@ -11,6 +11,9 @@
   nav a {
     @apply font-[500] tracking-[-0.4px] hover:opacity-60 duration-500 cursor-pointer;
   }
+  .mobile-nav a {
+    @apply font-[500] text-[2rem] py-[20px] border-b border-b-gray-200 cursor-pointer vsm:hover:animate-pulse;
+  }
   .banner {
     background-image: url("https://framerusercontent.com/images/fL05Xd9obLvtuzyD9ZkP63apUI0.svg");
     background-repeat: repeat;
@@ -30,8 +33,11 @@
   }
 }
 
+.grid-span-one {
+  grid-column: span 1 !important;
+}
 .grid-span-two {
-  grid-column: span 2;
+  grid-column: span 2 !important;
 }
 .slider {
   animation: slide-left 10s linear infinite;
@@ -64,4 +70,10 @@
 .wrapper > div {
   transform: translateY(100px);
   opacity: 0;
+}
+
+@media only screen and (max-width: 700px) {
+  .download-banner br {
+    display: none !important;
+  }
 }

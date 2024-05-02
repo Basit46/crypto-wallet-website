@@ -70,7 +70,7 @@ const Hero = () => {
     >
       <div className="relative w-full h-full">
         {/* Icons */}
-        <div className="absolute top-[37%] w-full flex flex-col items-center justify-center">
+        <div className="absolute top-[37%] w-full hidden md:flex flex-col items-center justify-center">
           <span className="flex items-center gap-[550px]">
             <img className="w-[48px] animate-bounce-3" src={icon1} alt="icon" />
             <img className="w-[48px] animate-bounce-3" src={icon2} alt="icon" />
@@ -85,7 +85,7 @@ const Hero = () => {
         {/* App Mobile screens */}
         <div className="w-full flex justify-center gap-[40px]">
           <img
-            className="screen1 absolute left-[140px] bottom-[-240px] w-[256px] h-[590px]"
+            className="screen1 hidden xl:block absolute left-[140px] bottom-[-240px] w-[256px] h-[590px]"
             src={screen1}
             alt="mobile screen"
           />
@@ -95,7 +95,7 @@ const Hero = () => {
             alt="mobile screen"
           />
           <img
-            className="screen3 absolute right-[140px] bottom-[-270px] w-[256px] h-[635px]"
+            className="screen3 hidden xl:block absolute right-[140px] bottom-[-270px] w-[256px] h-[635px]"
             src={screen3}
             alt="mobile screen"
           />
@@ -142,15 +142,15 @@ const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 pt-[80px] w-full h-full flex flex-col items-center">
-        <h1 className="main_text text-center text-[72px] font-[500] leading-[80.64px]">
-          Safeguard Your Digital <br /> Wealth with{" "}
+      <div className="absolute bottom-0 left-0 pt-[40px] md:pt-[80px] w-full h-full flex flex-col items-center">
+        <h1 className="main_text text-center text-[62px] md:text-[72px] font-[500] leading-[1.2] md:leading-[80.64px]">
+          Safeguard Your Digital <br className="hidden sm:inline" /> Wealth with{" "}
           <span className="text-[purple]">Trojan</span>
         </h1>
         <p className="p_text my-[20px] text-center text-[#4B4B4B]">
           Manage your cryptocurrencies securely and effortlessly with our
-          intuitive <br /> cryptowallet app. Take control of your digital assets
-          wherever you go.
+          intuitive <br className="hidden sm:inline" /> cryptowallet app. Take
+          control of your digital assets wherever you go.
         </p>
         <div className="hero_btn_cont flex items-center gap-[30px]">
           <button
