@@ -3,8 +3,8 @@ import React from "react";
 const Feature = ({ feature, i }) => {
   return (
     <div
-      className={`${feature.spanTwo && "grid-span-one sm:grid-span-two"} ${
-        i == 2 && "grid-span-one sm:grid-span-two xl:grid-span-one"
+      className={`${feature.spanTwo && "grid-span-two"} ${
+        i == 2 && ""
       } relative h-fit sm:h-[492.45px] p-[15px] sm:p-[32px] bg-[#FAFAFA] border-[1px] border-[#F3F3F3] rounded-[24px] overflow-hidden`}
     >
       {feature.isNew && (
@@ -35,7 +35,7 @@ const Feature = ({ feature, i }) => {
       </p>
       {feature.spanTwo && (
         <img
-          className="hidden sm:block absolute bottom-[-57px] left-[60px] w-[85%]"
+          className="hidden sm:block absolute bottom-[-57px] left-[60px] w-[65%]"
           src={feature.img}
           alt="feature illustration"
         />
