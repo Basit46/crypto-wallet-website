@@ -30,7 +30,11 @@ const MobileNavbar = ({ openNav, setOpenNav }) => {
       <Link onClick={closeNav} to="security" smooth={true} duration={1000}>
         Security
       </Link>
-      <a onClick={closeNav} href="#" target="blank">
+      <a
+        onClick={closeNav}
+        href="https://support.google.com/chrome/?hl=en"
+        target="blank"
+      >
         Support
       </a>
       <Link onClick={closeNav} to="download" smooth={true} duration={1000}>

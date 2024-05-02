@@ -8,60 +8,61 @@ import icon3 from "../assets/icon3.svg";
 import icon4 from "../assets/icon4.svg";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { Link } from "react-scroll";
 
 gsap.registerPlugin(useGSAP);
 
 const Hero = () => {
   const container = useRef();
 
-  // useGSAP(
-  //   () => {
-  //     const tl = gsap.timeline();
+  useGSAP(
+    () => {
+      const tl = gsap.timeline();
 
-  //     tl.from(".main_text", {
-  //       opacity: 0,
-  //       y: 10,
-  //       ease: "power2.out",
-  //       duration: 1,
-  //       delay: 0.5,
-  //     });
-  //     tl.from(".p_text", {
-  //       opacity: 0,
-  //       y: 10,
-  //       ease: "power2.out",
-  //       duration: 0.5,
-  //     });
-  //     tl.from(".hero_btn_cont", {
-  //       opacity: 0,
-  //       y: 10,
-  //       ease: "power2.out",
-  //       duration: 0.5,
-  //     });
-  //     tl.from(".screen1", {
-  //       opacity: 0,
-  //       y: 50,
-  //       ease: "power2.out",
-  //       duration: 1,
-  //     });
-  //     tl.from(
-  //       ".screen3",
-  //       {
-  //         opacity: 0,
-  //         y: 50,
-  //         ease: "power2.out",
-  //         duration: 1,
-  //       },
-  //       "<"
-  //     );
-  //     tl.from(".screen2", {
-  //       opacity: 0,
-  //       y: 50,
-  //       ease: "power2.out",
-  //       duration: 1,
-  //     });
-  //   },
-  //   { scope: container }
-  // );
+      tl.from(".main_text", {
+        opacity: 0,
+        y: 10,
+        ease: "power2.out",
+        duration: 1,
+        delay: 0.5,
+      });
+      tl.from(".p_text", {
+        opacity: 0,
+        y: 10,
+        ease: "power2.out",
+        duration: 0.5,
+      });
+      tl.from(".hero_btn_cont", {
+        opacity: 0,
+        y: 10,
+        ease: "power2.out",
+        duration: 0.5,
+      });
+      tl.from(".screen1", {
+        opacity: 0,
+        y: 50,
+        ease: "power2.out",
+        duration: 1,
+      });
+      tl.from(
+        ".screen3",
+        {
+          opacity: 0,
+          y: 50,
+          ease: "power2.out",
+          duration: 1,
+        },
+        "<"
+      );
+      tl.from(".screen2", {
+        opacity: 0,
+        y: 50,
+        ease: "power2.out",
+        duration: 1,
+      });
+    },
+    { scope: container }
+  );
 
   return (
     <section
@@ -153,18 +154,22 @@ const Hero = () => {
           control of your digital assets wherever you go.
         </p>
         <div className="hero_btn_cont flex items-center gap-[30px]">
-          <button
-            onClick={() => alert("yes")}
-            className="px-[14px] py-[10px] rounded-[10px] bg-black text-white"
+          <Link
+            to="download"
+            smooth={true}
+            duration={1000}
+            className="cursor-pointer px-[14px] py-[10px] rounded-[10px] bg-black text-white"
           >
             Get Wallet
-          </button>
-          <button
-            onClick={() => alert("yes")}
-            className="px-[14px] py-[10px] rounded-[10px] text-[#0F0F0F] border-[1px] border-[#E7E7E7] hover:bg-[#FAFAFA] duration-300"
+          </Link>
+          <Link
+            to="features"
+            smooth={true}
+            duration={1000}
+            className="cursor-pointer px-[14px] py-[10px] rounded-[10px] text-[#0F0F0F] border-[1px] border-[#E7E7E7] hover:bg-[#FAFAFA] duration-300"
           >
             Key Features
-          </button>
+          </Link>
         </div>
       </div>
     </section>

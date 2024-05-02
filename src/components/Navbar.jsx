@@ -24,9 +24,13 @@ const Navbar = ({ openNav, setOpenNav }) => {
       </div>
 
       <div className="hidden md:flex items-center gap-[10px]">
-        <button className="px-[14px] py-[10px] rounded-[10px] text-[#0F0F0F] border-[1px] border-[#E7E7E7] hover:bg-[#FAFAFA] duration-300">
+        <a
+          href="https://support.google.com/chrome/?hl=en"
+          target="blank"
+          className="px-[14px] py-[10px] rounded-[10px] text-[#0F0F0F] border-[1px] border-[#E7E7E7] hover:bg-[#FAFAFA] duration-300"
+        >
           Support
-        </button>
+        </a>
         <Link
           to="download"
           smooth={true}
