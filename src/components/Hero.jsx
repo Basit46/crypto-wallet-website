@@ -145,7 +145,7 @@ const Hero = () => {
       <div className="absolute bottom-0 left-0 pt-[80px] w-full h-full flex flex-col items-center">
         <h1 className="main_text text-center text-[72px] font-[500] leading-[80.64px]">
           Safeguard Your Digital <br /> Wealth with{" "}
-          <span className="text-[purple]">SafeWallet</span>
+          <span className="text-[purple]">Trojan</span>
         </h1>
         <p className="p_text my-[20px] text-center text-[#4B4B4B]">
           Manage your cryptocurrencies securely and effortlessly with our

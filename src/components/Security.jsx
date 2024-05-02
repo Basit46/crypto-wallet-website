@@ -17,11 +17,11 @@ const Security = () => {
 
       <div className="relative mt-[30px] bg-[#FDBC45] h-[408px] overflow-hidden w-full flex flex-col justify-between rounded-[24px] py-[40px] pl-[40px]">
         <h1 className="text-[40px] font-[500] leading-[44.8px]">
-          SafeWallet's Unrivaled <br /> Security Features
+          Trojan's Unrivaled <br /> Security Features
         </h1>
         <div>
           <p className="mb-[30px]">
-            Protect your investments with SafeWallet's security <br /> measures.
+            Protect your investments with Trojan's security <br /> measures.
             From robust encryption protocols to multi- <br /> factor
             authentication and continuous monitoring, our <br /> platform
             ensures the safety for your digital assets.

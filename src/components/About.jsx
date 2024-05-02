@@ -18,17 +18,17 @@ const About = () => {
             ABOUT APP
           </div>
           <h1 className="mt-[10px] mb-[20px] text-[52px] font-[500] leading-[58.24px]">
-            Discover SafeWallet Cryptowallet Solution
+            Discover Trojan Cryptowallet Solution
           </h1>
           <p className="text-[#4B4B4B] mb-[10px]">
-            Experience the pinnacle of security and convenience with
-            SafeWallet's Cryptowallet Solution. Our state-of-the-art wallet
-            offers unparalleled protection for your digital assets, coupled with
+            Experience the pinnacle of security and convenience with Trojan's
+            Cryptowallet Solution. Our state-of-the-art wallet offers
+            unparalleled protection for your digital assets, coupled with
             intuitive features designed to streamline your crypto experience.
           </p>
           <p className="text-[#4B4B4B]">
-            With SafeWallet, you can securely store, manage, and transact with
-            ease, empowering you to navigate the world of cryptocurrency with
+            With Trojan, you can securely store, manage, and transact with ease,
+            empowering you to navigate the world of cryptocurrency with
             confidence and peace of mind.
           </p>
         </div>

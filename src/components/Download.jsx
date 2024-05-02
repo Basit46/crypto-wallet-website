@@ -7,7 +7,7 @@ const Download = () => {
       className="relative mt-[150px] px-[112px] pt-[80px] pb-[120px] min-h-[200px] w-full rounded-[20px] bg-[#FAFAFA] border-[1px] border-[#F3F3F3] overflow-hidden"
     >
       <h1 className="text-[52px] font-[500] leading-[58.2px]">
-        Get the SafeWallet App and <br /> Dive Into Crypto
+        Get the Trojan App and <br /> Dive Into Crypto
       </h1>
       <div className="mt-[50px] w-full flex justify-between">
         <div className="w-[30%] h-[219px] p-[32px]  border-[1px] border-[#F3F3F3] bg-white rounded-[24px] flex flex-col justify-between">
@@ -18,7 +18,7 @@ const Download = () => {
           />
           <h1 className="text-[20px] font-[500]">Download for IOS</h1>
           <p className="text-[#4B4B4B]">
-            Download the SafeWallet mobile app from the App Store
+            Download the Trojan mobile app from the App Store
           </p>
         </div>
         <div className="w-[30%] h-[219px] p-[32px]  border-[1px] border-[#F3F3F3] bg-white rounded-[24px] flex flex-col justify-between">
@@ -29,7 +29,7 @@ const Download = () => {
           />
           <h1 className="text-[20px] font-[500]">Download for Android</h1>
           <p className="text-[#4B4B4B]">
-            Download the SafeWallet mobile app from the Google play
+            Download the Trojan mobile app from the Google play
           </p>
         </div>
         <div className="w-[30%] h-[219px] p-[32px]  border-[1px] border-[#F3F3F3] bg-white rounded-[24px] flex flex-col justify-between">
@@ -40,7 +40,7 @@ const Download = () => {
           />
           <h1 className="text-[20px] font-[500]">Download for Chrome</h1>
           <p className="text-[#4B4B4B]">
-            Download the SafeWallet mobile app from the Chrome Web Store
+            Download the Trojan mobile app from the Chrome Web Store
           </p>
         </div>
       </div>
@@ -51,7 +51,7 @@ const Download = () => {
         </h1>
         <div>
           <p className="mb-[30px]">
-            Unlock the power of crypto on the go with the SafeWallet <br /> app.
+            Unlock the power of crypto on the go with the Trojan <br /> app.
             Seamlessly manage, trade, and track your digital <br /> assets from
             the palm of your hand, wherever you are. <br /> Download now and
             take control of your crypto.

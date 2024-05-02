@@ -28,7 +28,7 @@ const Footer = () => {
           <ul>
             <li>Whitepaper</li>
             <li>Developer Portal</li>
-            <li>SafeWallet Fundation</li>
+            <li>Trojan Fundation</li>
           </ul>
         </div>
         <div>

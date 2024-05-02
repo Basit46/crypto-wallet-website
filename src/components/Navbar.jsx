@@ -19,7 +19,7 @@ const Navbar = () => {
 
       <div className="flex items-center gap-[10px]">
         <img className="w-[30px]" src={logo} alt="logo" />
-        <h1 className="font-bold text-[1.2rem]">SafeWallet</h1>
+        <h1 className="font-bold text-[1.2rem]">Trojan</h1>
       </div>
 
       <div className="flex items-center gap-[10px]">
