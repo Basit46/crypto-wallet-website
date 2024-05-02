@@ -15,7 +15,7 @@ const Feature = ({ feature, i }) => {
       <h1
         className={`${
           feature.spanTwo && "w-full sm:w-[50%]"
-        } text-[23px] sm:text-[28px] font-[500] leading-[31.36px]`}
+        } text-[20px] vsm:text-[23px] sm:text-[28px] font-[500] leading-[31.36px]`}
       >
         {feature.title}
       </h1>

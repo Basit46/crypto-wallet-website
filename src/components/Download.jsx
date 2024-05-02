@@ -5,9 +5,9 @@ const Download = () => {
   return (
     <section
       id="download"
-      className="relative mt-[150px] px-[20px] xl:px-[112px] pt-[80px] pb-[120px] min-h-[200px] w-full rounded-[20px] bg-[#FAFAFA] border-[1px] border-[#F3F3F3] overflow-hidden"
+      className="relative mt-[100px] md:mt-[150px] px-[20px] xl:px-[112px] pt-[40px] vsm:pt-[80px] pb-[120px]  w-full rounded-[20px] bg-[#FAFAFA] border-[1px] border-[#F3F3F3] overflow-hidden"
     >
-      <h1 className="text-[40px] md:text-[52px] font-[500] leading-[1.2] md:leading-[58.2px]">
+      <h1 className="text-[30px] vsm:text-[40px] md:text-[52px] font-[500] leading-[1.2] md:leading-[58.2px]">
         Get the Trojan App and <br className="hidden md:inline" /> Dive Into
         Crypto
       </h1>

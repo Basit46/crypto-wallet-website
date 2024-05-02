@@ -9,7 +9,7 @@ const Security = () => {
       id="security"
       className="w-full mt-[100px] md:mt-[150px] px-[0px] xl:px-[112px]"
     >
-      <h1 className="text-[40px] md:text-[52px] font-[500] leading-[1.2] md:leading-[58.24px]">
+      <h1 className="text-[30px] vsm:text-[40px] md:text-[52px] font-[500] leading-[1.2] md:leading-[58.24px]">
         Bulletproofing Your <br /> Crypto Investments
       </h1>
 

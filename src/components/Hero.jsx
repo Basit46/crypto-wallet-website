@@ -14,54 +14,54 @@ gsap.registerPlugin(useGSAP);
 const Hero = () => {
   const container = useRef();
 
-  useGSAP(
-    () => {
-      const tl = gsap.timeline();
+  // useGSAP(
+  //   () => {
+  //     const tl = gsap.timeline();
 
-      tl.from(".main_text", {
-        opacity: 0,
-        y: 10,
-        ease: "power2.out",
-        duration: 1,
-        delay: 0.5,
-      });
-      tl.from(".p_text", {
-        opacity: 0,
-        y: 10,
-        ease: "power2.out",
-        duration: 0.5,
-      });
-      tl.from(".hero_btn_cont", {
-        opacity: 0,
-        y: 10,
-        ease: "power2.out",
-        duration: 0.5,
-      });
-      tl.from(".screen1", {
-        opacity: 0,
-        y: 50,
-        ease: "power2.out",
-        duration: 1,
-      });
-      tl.from(
-        ".screen3",
-        {
-          opacity: 0,
-          y: 50,
-          ease: "power2.out",
-          duration: 1,
-        },
-        "<"
-      );
-      tl.from(".screen2", {
-        opacity: 0,
-        y: 50,
-        ease: "power2.out",
-        duration: 1,
-      });
-    },
-    { scope: container }
-  );
+  //     tl.from(".main_text", {
+  //       opacity: 0,
+  //       y: 10,
+  //       ease: "power2.out",
+  //       duration: 1,
+  //       delay: 0.5,
+  //     });
+  //     tl.from(".p_text", {
+  //       opacity: 0,
+  //       y: 10,
+  //       ease: "power2.out",
+  //       duration: 0.5,
+  //     });
+  //     tl.from(".hero_btn_cont", {
+  //       opacity: 0,
+  //       y: 10,
+  //       ease: "power2.out",
+  //       duration: 0.5,
+  //     });
+  //     tl.from(".screen1", {
+  //       opacity: 0,
+  //       y: 50,
+  //       ease: "power2.out",
+  //       duration: 1,
+  //     });
+  //     tl.from(
+  //       ".screen3",
+  //       {
+  //         opacity: 0,
+  //         y: 50,
+  //         ease: "power2.out",
+  //         duration: 1,
+  //       },
+  //       "<"
+  //     );
+  //     tl.from(".screen2", {
+  //       opacity: 0,
+  //       y: 50,
+  //       ease: "power2.out",
+  //       duration: 1,
+  //     });
+  //   },
+  //   { scope: container }
+  // );
 
   return (
     <section
@@ -90,7 +90,7 @@ const Hero = () => {
             alt="mobile screen"
           />
           <img
-            className="screen2 absolute bottom-[-298px] w-[360px] h-[715px]"
+            className="screen2 absolute bottom-[-230px] vsm:bottom-[-298px] w-[90%] vsm:w-[360px] h-fit vsm:h-[715px]"
             src={screen2}
             alt="mobile screen"
           />
@@ -143,7 +143,7 @@ const Hero = () => {
       </div>
 
       <div className="absolute bottom-0 left-0 pt-[40px] md:pt-[80px] w-full h-full flex flex-col items-center">
-        <h1 className="main_text text-center text-[62px] md:text-[72px] font-[500] leading-[1.2] md:leading-[80.64px]">
+        <h1 className="main_text text-center text-[55px] vsm:text-[62px] md:text-[72px] font-[500] leading-[1.1] vsm:leading-[1.2] md:leading-[80.64px]">
           Safeguard Your Digital <br className="hidden sm:inline" /> Wealth with{" "}
           <span className="text-[purple]">Trojan</span>
         </h1>

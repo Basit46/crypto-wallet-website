@@ -8,7 +8,7 @@ const About = () => {
       id="about"
       className="w-full mt-[100px] md:mt-[150px] px-[0px] xl:px-[112px]"
     >
-      <div className="w-full flex flex-col lg:flex-row items-center gap-[30px] lg:justify-between">
+      <div className="w-full flex flex-col-reverse lg:flex-row items-center gap-[30px] lg:justify-between">
         <div className="banner relative w-full lg:w-[411px] h-[541px] bg-[#FDBC45] rounded-[24px] flex justify-center overflow-hidden">
           <img
             className="absolute bottom-[-230px] w-[307px] h-[708px]"
@@ -20,7 +20,7 @@ const About = () => {
           <div className="w-fit px-[12px] py-[6px] rounded-[100px] border-[1px] border-black text-[12px]">
             ABOUT APP
           </div>
-          <h1 className="mt-[10px] mb-[20px] text-[40px] md:text-[52px] font-[500] leading-[1.2] md:leading-[58.24px]">
+          <h1 className="mt-[10px] mb-[20px] text-[30px] vsm:text-[40px] md:text-[52px] font-[500] leading-[1.2] md:leading-[58.24px]">
             Discover Trojan Cryptowallet Solution
           </h1>
           <p className="text-[#4B4B4B] mb-[10px]">

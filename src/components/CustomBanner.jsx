@@ -12,9 +12,9 @@ const CustomBanner = ({
   return (
     <div
       style={{ backgroundColor: bg }}
-      className="relative mt-[30px] h-[600px] lg:h-[408px] overflow-hidden w-full flex flex-col lg:justify-between rounded-[24px] py-[40px] pl-[40px]"
+      className="relative mt-[30px] h-[600px] lg:h-[408px] overflow-hidden w-full flex flex-col lg:justify-between rounded-[24px] py-[30px] sm:py-[40px] px-[20px] sm:px-0 sm:pl-[40px]"
     >
-      <h1 className="z-[2] text-[35px] xmd:text-[40px] font-[500] leading-[1.2] xmd:leading-[44.8px]">
+      <h1 className="z-[2] text-[25px] vsm:text-[35px] xmd:text-[40px] font-[500] leading-[1.2] xmd:leading-[44.8px]">
         {title1} <br /> {title2}
       </h1>
       <div>
@@ -54,8 +54,8 @@ const CustomBanner = ({
       <img
         className={`${
           isDownload
-            ? "right-[120px] w-[248px] h-[492px] bottom-[-300px] xmd:bottom-[-200px]"
-            : "bottom-0 right-[75px]"
+            ? "vsm:right-[120px] w-[70%] vsm:w-[248px] h-fit vsm:h-[492px] bottom-[-200px] vsm:bottom-[-300px] xmd:bottom-[-200px]"
+            : "bottom-0 w-[60%] vsm:w-fit right-[75px]"
         } absolute`}
         src={img}
         alt="bg"
