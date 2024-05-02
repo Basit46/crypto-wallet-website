@@ -1,0 +1,58 @@
+export const featuresList = [
+  {
+    title: "Easy Onboarding & Simple Use",
+    img: "https://framerusercontent.com/images/OFLuDR3Cf4IRijJaBL0ST7J8zk.svg",
+    body: "Get started in minutes with our intuitive and user-friendly experience. No crypto knowledge required.",
+    isNew: false,
+    spanTwo: false,
+  },
+  {
+    title: "Advanced Security Features",
+    img: "https://framerusercontent.com/images/Zkwuf69ADEBocgNupSKOc4MG90.svg",
+    body: "Industry-leading security features and secure backup options keep your crypto safe and accessible.",
+    isNew: false,
+    spanTwo: false,
+  },
+  {
+    title: "Secure Staking & Earn Rewards",
+    img: "https://framerusercontent.com/images/d5XyezVOEBiutIJ44LjYs0UCo.svg",
+    body: "Earn passive income with secure staking options. Grow your portfolio while your crypto works for you.",
+    isNew: false,
+    spanTwo: false,
+  },
+  {
+    title: "Customizable Watchlist & Price Alerts",
+    img: "https://framerusercontent.com/images/cmJFL59UdkUqkVAnIFbkifIEM.svg",
+    body: "Create a personalized watchlist and set price alerts to stay informed about market movements.",
+    isNew: true,
+    spanTwo: true,
+  },
+  {
+    title: "Stay Informed, Invest Confidently",
+    img: "https://framerusercontent.com/images/VKmNulBALM4DAoBn6mWgkwTVIL0.svg",
+    body: "Staying informed and making smart investment decisions through the in-app news feed.",
+    isNew: true,
+    spanTwo: false,
+  },
+  {
+    title: "Multi-Currency Support",
+    img: "https://framerusercontent.com/images/DhvP7DwZoJloKqYNKBIA8Dhroz4.svg",
+    body: "Effortlessly manage a diverse portfolio of cryptocurrencies in a single, user-friendly interface.",
+    isNew: false,
+    spanTwo: false,
+  },
+  {
+    title: "Sync Across Devices",
+    img: "https://framerusercontent.com/images/u7orwzIwerNIb9TDWdU8cAY3n8.svg",
+    body: "Sync your wallet seamlessly across multiple devices, ensuring access to your assets wherever you go.",
+    isNew: false,
+    spanTwo: false,
+  },
+  {
+    title: "24/7 Customer Support",
+    img: "https://framerusercontent.com/images/TBUl6dJ1E5A7OCISe7KPdnELY4E.svg",
+    body: "Our dedicated team of experts, ready to assist you with any inquiries or issues you may encounter.",
+    isNew: false,
+    spanTwo: false,
+  },
+];

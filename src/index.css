@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    font-family: "DM Sans", sans-serif;
+  }
+  nav a {
+    @apply font-[500] tracking-[-0.4px] hover:opacity-60 duration-500 cursor-pointer;
+  }
+  .banner {
+    background-image: url("https://framerusercontent.com/images/fL05Xd9obLvtuzyD9ZkP63apUI0.svg");
+    background-repeat: repeat;
+    background-size: 35.88px;
+  }
+  .slider span {
+    @apply w-[20px] h-[4px] rounded-[100px] bg-[#4B4B4B];
+  }
+  .slider p {
+    @apply text-[12px] font-[500] text-white whitespace-nowrap;
+  }
+  footer .links h1 {
+    @apply text-[12px] font-[500] mb-[20px];
+  }
+  footer .links li {
+    @apply font-[500] opacity-80 hover:opacity-100 duration-500 mb-[10px];
+  }
+}
+
+.grid-span-two {
+  grid-column: span 2;
+}
+.slider {
+  animation: slide-left 10s linear infinite;
+}
+
+@keyframes slide-left {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-bounce-3 {
+  animation: bounce 3s infinite;
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
+}
+.wrapper {
+  padding-bottom: 3px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+.wrapper > div {
+  transform: translateY(100px);
+  opacity: 0;
+}
